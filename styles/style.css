@@ -136,7 +136,7 @@
   inline-size: var(--inline-size-block);
 }
 
-.card__content {  
+.card__content {
   border: 2px solid currentColor;
   background-color: var(--bg-color);
 }
