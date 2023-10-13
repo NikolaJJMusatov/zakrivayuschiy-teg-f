@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  min-inline-size: 375px;
 }
 
 h1,
@@ -28,6 +29,7 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 button,

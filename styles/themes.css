@@ -4,3 +4,52 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --main-font: Inter-Variable;
+  --accent-font: PressStart2P;
+  --font-weight-title-card: 700;
+  --font-weight-text-card: 400;
+  --bg-color: #fff;
+  --accent-color: #000;
+  --color-text-shadow: #fff;
+  --mix-blend-color: #fff;
+  --accent-color-svg: #000;
+  --bg-svg: #f00;
+  --bg-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0px 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a); 
+}
+
+:root.theme-dark {
+  --main-font: Inter-Variable;
+  --accent-font: PressStart2P;
+  --font-weight-title-card: 785;
+  --font-weight-text-card: 465;
+  --bg-color: #000;
+  --accent-color: #00CC14;
+  --color-text-shadow: #000;
+  --mix-blend-color: #00CC14;
+  --accent-color-svg: #00CC14;
+  --bg-svg: #f00;
+  --bg-image: repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(#000 0px 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #007f0c);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: Inter-Variable;
+    --accent-font: PressStart2P;
+    --font-weight-title-card: 785;
+    --font-weight-text-card: 465;
+    --bg-color: #000;
+    --accent-color: #00CC14;
+    --color-text-shadow: #000;
+    --mix-blend-color: #00CC14;
+    --accent-color-svg: #00CC14;
+    --bg-svg: #f00;
+    --bg-image: repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(#000 0px 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #007f0c);
+  }
+}
